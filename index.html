@@ -6,110 +6,22 @@
     <title>SMCC Website</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
-<style>
-    body{
-        margin: 10px;
-    }
-    main{
-        margin: 15px;
-    }
-    nav ul{
-        list-style: none;
-        background-color: rgb(23, 23, 180);
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    nav li{
-        display: inline-block;
-    }
-    nav a{
-        text-decoration: none;
-        color: white;
-        width: 100px;
-        font-size: 12px;
-        padding: 15px 15px;
-        display: block;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-    }
-    nav a:before{
-        position: absolute;
-        content: ' ';
-        left: 0;
-        bottom: 0;
-        height: 3px;
-        width: 100%;
-        background: yellow;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform .4s linear;
-    }
-    nav a:hover::before{
-        transform: scaleX(1);
-        transform-origin: left;
-    }
-    footer nav p{
-        color: white;
-    }
-    footer nav ul{
-        list-style: none;
-        background-color: rgb(23, 23, 180);
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    footer nav li{
-        display: inline-block;
-    }
-    footer nav a{
-        text-decoration: none;
-        color: white;
-        width: 100px;
-        font-size: 12px;
-        padding: 15px 15px;
-        display: block;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-    }
-    footer nav a:before{
-        position: absolute;
-        content: ' ';
-        left: 0;
-        bottom: 0;
-        height: 3px;
-        width: 100%;
-        background: yellow;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform .4s linear;
-    }
-    footer nav a:hover::before{
-        transform: scaleX(1);
-        transform-origin: left;
-    }
-    section h2{
-        text-align: center;
-    }
-    .imgMain{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 500px;
-    }
-</style>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About SMCC</a></li>
-                <li><a href="">Courses Offered</a></li>
+                <li><a href="#">About SMCC &#x25BE;</a>
+                    <ul class="dropdown">
+                        <li><a href="#vision">Vision & Mission</a></li>
+                        <li><a href="#values">Core Values</a></li>
+                        <li><a href="#policy">Quality Policy</a></li>
+                        <li><a href="#history">School History</a></li>
+                        <li><a href="#milestone">SMCC MILESTONES</a></li>
+                        <li><a href="#logo">The School Logo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#course">Courses Offered</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
@@ -119,9 +31,9 @@
     <hr>
 
     <main>
-        <article>
+        <article id="about">
             <h1>About SMCC</h1>
-            <section>
+            <section id="vision">
                 <h2>VISION</h2>
                 <p>
                     Saint Michael College of Caraga Envisions to be a 
@@ -129,7 +41,7 @@
                     and Excellence in Teaching, Service, and Research.</p>
             </section>
 
-            <section>
+            <section id="vision">
                 <h2>MISSION</h2>
                 <p>SMCC shall provide spiritual formation and learning culture
                     that will ensure the students with excellent and rewarding
@@ -146,21 +58,21 @@
                             and social development.</p>
             </section>
 
-            <section>
+            <section id="values">
                 <h2>CORE VALUES</h2>
                 <figure>
                     <img src="img/core-values.png" alt="core-values logo" class="imgMain">
                 </figure>
             </section>
             <br>
-            <section>
+            <section id="policy">
                 <h2>QUALITY POLICY</h2>
                 <figure>
                     <img src="img/quality-policy.png" alt="quality-policy Picture" class="imgMain">
                 </figure>
             </section>
 
-            <section>
+            <section id="history">
                 <h2>SCHOOL'S HISTORY</h2>
                 <p>In 1948, NASIPIT was still a part of the Parish of Buenavista, whose Parish Priest 
                     was the late Fr. Martin Westeinde, a Dutch MSC. As the town progressed, population 
@@ -298,7 +210,7 @@
                     At present, SMCC is getting Bigger, Better, Stronger, and Holier.</p>
             </section>
 
-            <section>
+            <section id="milestone">
                 <h2>SMCC MILESTONES</h2>
                 <p><b>1947</b></p>
                 <p>- Fr. Martin Westeide, a Dutch MSC and Fr. Atanacio de Castro saw the need of putting-up 
@@ -471,7 +383,7 @@
                 <p>- Awarded as Outstanding Students of the Caraga Region for 2018.</p>
             </section>
 
-            <section>
+            <section id="logo">
                 <h2>THE SCHOOL LOGO</h2>
                 <table>
                     <tr>
@@ -490,7 +402,7 @@
 
         <hr>
 
-        <article>
+        <article id="course">
             <h2>Courses Offered</h2>
             <section>
                 <h3>Basic Education</h3>
@@ -643,9 +555,9 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About SMCC</a></li>
-                <li><a href="">Courses Offered</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About SMCC</a></li>
+                <li><a href="#course">Courses Offered</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Contact Us</a></li>
                 <p>All Right Reserve &copy; Winston Lloyd Timogan</p>
