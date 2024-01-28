@@ -1,5 +1,6 @@
 body{
     margin: 10px;
+    background-color: rgb(218, 218, 112);
 }
 main{
     margin: 15px;
@@ -78,9 +79,19 @@ nav li a:hover{
 nav li:hover ul.dropwdownService{
     display: block;
 }
-
-
-
+.imgMain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+}
+button{
+    display: block;
+    margin: auto;
+    border-radius: 40px;
+    text-transform: uppercase;
+    background-color: yellow;
+}
 footer nav p{
     color: white;
 }
@@ -124,10 +135,4 @@ footer nav a:hover::before{
 }
 section h2{
     text-align: center;
-}
-.imgMain{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 350px;
 }
