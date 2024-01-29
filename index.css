@@ -136,3 +136,6 @@ footer nav a:hover::before{
 section h2{
     text-align: center;
 }
+html{
+    scroll-behavior: smooth;
+}
