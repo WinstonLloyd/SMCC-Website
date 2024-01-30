@@ -5,6 +5,14 @@ body{
 main{
     margin: 15px;
 }
+.smcc{
+    float: inline-start;
+    color: yellow;
+    font-size: 11px;
+}
+.saint{
+    font-size: 10px;
+}
 nav ul{
     list-style: none;
     background-color: rgb(23, 23, 180);
