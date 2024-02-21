@@ -4,43 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMCC Website</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="img/smcclogo.gif">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+
 </head>
 <body>
-    <header id="home">
-        <nav>
-            <ul>
-                <figure>
-                    <h1 class="smcc">
-                        <img src="img/smcclogo.gif" alt="" height="15px"> SMCC <hr> <p class="saint">Saint Michael College of Caraga</p></h1>
-                </figure>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#">About SMCC &#x25BE;</a>
-                    <ul class="dropdown">
-                        <li><a href="#vision">Vision & Mission</a></li>
-                        <li><a href="#values">Core Values</a></li>
-                        <li><a href="#policy">Quality Policy</a></li>
-                        <li><a href="#history">School History</a></li>
-                        <li><a href="#milestone">SMCC MILESTONES</a></li>
-                        <li><a href="#logo">The School Logo</a></li>
-                    </ul>
-                </li>
-                <li><a href="#course">Courses Offered</a></li>
-                <li><a href="#">Services &#x25BE;</a>
-                    <ul class="dropwdownService">
-                        <li style="color: white;">Student Services</li>
-                        <li><a href="#requirements">Admission & Scholarship Services</a></li>
-                        <li style="color: white;">Online Services</li>
-                        <li><a href="https://my.smccnasipit.edu.ph/enrollment_application">Online Enrollment</a></li>
-                        <li><a href="https://my.smccnasipit.edu.ph/">Student Portal</a></li>
-                        <li><a href="https://www.facebook.com/SMCCofficial">Official Facebook Page</a></li>
-                        <li><a href="https://www.youtube.com/@smccnasipitofficial">YouTube Channel</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md bg">
+            <a href="" class="navbar-brand fs-3 ms-3 text-white"><img src="img/smcclogo.gif" alt="" height="15px"> SMCC <hr> <p class="saint">Saint Michael College of Caraga</p></a>
+
+            <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+                <i class="bx bx-menu bx-md"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="btn">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link mx-3 text-white fs-4">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link mx-3 text-white fs-4">About SMCC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#course" class="nav-link mx-3 text-white fs-4">Courses Offered</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link mx-3 text-white fs-4">Student Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link mx-3 text-white fs-4">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
